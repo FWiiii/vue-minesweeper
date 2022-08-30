@@ -1,6 +1,5 @@
 <script setup>
 import { ref, watchEffect } from "vue";
-import zInput from "./components/Input.vue";
 
 const WIDTH = 5;
 const HEIGHT = 5;
@@ -21,7 +20,7 @@ const state = ref(
 );
 
 let mineGenerated = false;
-let dev = true;
+let dev = false;
 
 function onClick(block) {
   if (!mineGenerated) {
