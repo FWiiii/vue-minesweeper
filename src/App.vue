@@ -1,8 +1,8 @@
 <script setup>
 import { ref, watchEffect } from "vue";
 
-const WIDTH = 5;
-const HEIGHT = 5;
+const WIDTH = 10;
+const HEIGHT = 10;
 
 const state = ref(
   Array.from({ length: HEIGHT }, (_, y) =>
