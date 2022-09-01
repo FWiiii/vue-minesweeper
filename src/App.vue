@@ -1,11 +1,15 @@
 <script setup>
-import { nextTick, ref, watchEffect } from "vue";
+import { ref, watchEffect,onMounted } from "vue";
 
 const WIDTH = ref(5);
 const HEIGHT = ref(5);
 let state = ref([]);
 const timer = ref(0);
 let Timer;
+
+onMounted(() => {
+  startGame();
+})
 
 function startGame() {
   if (Timer) clearInterval(Timer);
